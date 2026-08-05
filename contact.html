@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Early Access | Skudora</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+</head>
+
+
+
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="/images/Skudora_Logo_Regular_Black.svg" alt="Skudora Logo" class="site-logo" aria-hidden="true" role="img">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+  <a href="features.html">Features</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="spire.html">Spire</a>
+  <a href="resources.html">Resources</a>
+</nav>
+
+    <a class="nav-cta" href="contact.html">Request Demo</a>
+
+  </div>
+</header>
+
+<div class="page-content">
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Ready for Discovery?</h1>
+
+<p>
+Skudora is the easiest way for Spire users to transform, scale, and streamline their business—no disruption, just results.
+</p>
+
+<p style="margin-top:20px;">
+Request your personalized demo and see how effortless next-level operations can be.
+</p>
+
+<script src="https://js-na3.hsforms.net/forms/embed/343131585.js" defer></script>
+<div id="demo-form" class="hs-form-frame" data-region="na3" data-form-id="fb0e0864-e030-46cd-9829-8e56aa7e1042" data-portal-id="343131585"></div>
+
+</div>
+
+</section>
+
+<section class="cta-section reveal">
+
+<h2>Transform Your Spire Workflows</h2>
+
+<p>Are you ready to take your business to the next level? Leapfrog the competition with Skudora—built for Spire users who want to scale, streamline, and win. Request your demo today!</p>
+
+<a class="primary-btn" href="#demo-form">Request Demo</a>
+
+</section>
+
+
+<footer>
+
+<img src="/images/Skudora_Logo_Stacked_White.svg" alt="Skudora white stacked logo" class="footer-logo" aria-hidden="true" role="img" />
+
+<p class="footer-tagline">Humanize digital commerce</p>
+
+<div class="footer-social-links">
+  <a href="https://www.linkedin.com/company/skudora" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <img src="/images/linkedin_light_for_dark_background.svg" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/skudora" target="_blank" rel="noopener noreferrer" aria-label="X">
+    <img src="/images/x_light_for_dark_background.svg" alt="X" />
+  </a>
+  <a href="https://reddit.com/r/skudora" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+    <img src="/images/reddit_light_for_dark_background.svg" alt="Reddit" />
+  </a>
+  <a href="https://www.youtube.com/@skudora" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <img src="/images/youtube_light_for_dark_background.svg" alt="YouTube" />
+  </a>
+  <a href="https://instagram.com/skudora" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <img src="/images/instagram_light_for_dark_background.svg" alt="Instagram" />
+  </a>
+  <a href="https://www.tiktok.com/@skudora" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+    <img src="/images/tiktok_light_for_dark_background.svg" alt="TikTok" />
+  </a>
+  <a href="https://github.com/skudora" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+    <img src="/images/github_light_for_dark_background.svg" alt="GitHub" />
+  </a>
+  <a href="https://bsky.app/profile/skudora.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+    <img src="/images/bluesky_light_for_dark_background.svg" alt="Bluesky" />
+  </a>
+  <a href="https://linktr.ee/skudora" target="_blank" rel="noopener noreferrer" aria-label="Linktree">
+    <img src="/images/linktree_light_for_dark_background.svg" alt="Linktree" />
+  </a>
+</div>
+
+<p class="footer-copyright">© 2026 Skudora All rights reserved.</p>
+
+</footer>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+reveals.forEach(el => observer.observe(el));
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var pc = document.querySelector(".page-content");
+    if (!pc) return;
+
+    // Fade in on load
+    pc.style.opacity = "0";
+    pc.style.transform = "translateY(10px)";
+    pc.style.transition = "opacity 0.35s ease, transform 0.35s ease";
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            pc.style.opacity = "1";
+            pc.style.transform = "translateY(0)";
+        });
+    });
+
+    // Fade out on internal link clicks
+    document.querySelectorAll("a").forEach(function(link) {
+        if (
+            link.hostname === window.location.hostname &&
+            !link.hasAttribute("target") &&
+            !link.href.includes("#")
+        ) {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                var href = this.href;
+                pc.style.opacity = "0";
+                setTimeout(function() { window.location = href; }, 300);
+            });
+        }
+    });
+});
+
+window.addEventListener("pageshow", function(e) {
+    if (e.persisted) {
+        var pc = document.querySelector(".page-content");
+        if (pc) { pc.style.opacity = "1"; pc.style.transform = "translateY(0)"; }
+    }
+});
+</script>
+
+</div><!-- /.page-content -->
+
+</body>
+
+</html>

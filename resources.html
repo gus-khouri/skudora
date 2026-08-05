@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resources | Skudora</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="/images/Skudora_Logo_Regular_Black.svg" alt="Skudora Logo" class="site-logo" aria-hidden="true" role="img">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="spire.html">Spire</a>
+      <a href="resources.html" class="active">Resources</a>
+    </nav>
+
+    <a class="nav-cta" href="contact.html">Request Demo</a>
+
+  </div>
+</header>
+
+<div class="page-content">
+
+<section class="hero reveal">
+  <div class="hero-content">
+    <h1>Resources</h1>
+    <p>Everything you need to get up and running with Skudora — guides, answers, and in-depth documentation all in one place.</p>
+  </div>
+</section>
+
+
+<section class="resources-toc-section reveal">
+  <div class="resources-toc-card">
+    <p class="resources-toc-label">On this page</p>
+    <div class="resources-toc-columns">
+
+      <div class="resources-toc-group">
+        <a href="#getting-started" class="toc-section-link">Getting Started</a>
+        <a href="#overview" class="toc-sub-link">Overview</a>
+      </div>
+
+      <div class="resources-toc-group">
+        <a href="#common-questions" class="toc-section-link">Common Questions</a>
+      </div>
+
+      <div class="resources-toc-group">
+        <a href="#knowledgebase" class="toc-section-link">Knowledgebase</a>
+        <a href="#how-skudora-works-with-spire" class="toc-sub-link">How Skudora Works with Spire</a>
+        <a href="#environment-requirements" class="toc-sub-link">Environment Requirements</a>
+        <a href="#exhaustive-feature-listing" class="toc-sub-link">Exhaustive Feature Listing</a>
+      </div>
+
+      <div class="resources-toc-group">
+        <a href="#training-modules" class="toc-section-link">Training Modules</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="getting-started" class="resources-section reveal">
+  <div class="resources-section-inner">
+    <h2>Getting Started</h2>
+    <p>New to Skudora? This section walks you through everything you need to go from sign-up to fully operational — no technical background required.</p>
+
+    <div id="overview" class="resources-subsection">
+      <h3>Overview</h3>
+      <p>Skudora is a web-based platform built specifically for custom product and service businesses running on Spire. It brings customers, orders, workflows, and team communication into a single interface that works seamlessly alongside your existing Spire environment.</p>
+      <p>Getting started involves four steps, typically completed by your Spire Partner in coordination with your team:</p>
+      <ol>
+        <li><strong>Spire data export</strong> — your Spire Partner exports the required tables from your Spire instance (customers, products, pricing, vendors, and related records). These are then imported into Skudora to seed your environment with your existing business data.</li>
+        <li><strong>Spire connection</strong> — your Spire instance is connected to Skudora via the SIP API, enabling live bidirectional data sync going forward.</li>
+        <li><strong>Third-party service integrations</strong> — each additional service your business uses is connected via its own API credentials, provided by you or your Spire Partner. This includes:
+          <ul>
+            <li><strong>Courier APIs</strong> — each supported carrier (Canada Post, UPS, FedEx, Purolator, and others) is connected individually using your business's own carrier account credentials. This enables live rate shopping, label generation, and shipment tracking directly inside Skudora.</li>
+            <li><strong>Payment gateway</strong> — your payment provider is connected via API to enable online credit card acceptance at checkout and on invoices. Required only if customers will pay by card; not needed for businesses operating exclusively on invoice terms.</li>
+            <li><strong>Google Merchant Centre</strong> — your product catalogue can be connected to Google Merchant Centre via API to enable product listing syndication and Shopping campaign eligibility.</li>
+            <li><strong>Analytics and tracking</strong> — Google Analytics, Google Tag Manager, or other tracking codes can be applied to your Skudora storefront to measure traffic, conversion, and customer behaviour across your digital presence.</li>
+          </ul>
+        </li>
+        <li><strong>Team account configuration</strong> — your team accounts are created and role permissions are configured to match how your organization operates.</li>
+        <li><strong>Branding and portal setup</strong> — your customer-facing portal is customized with your logo, colours, and any initial catalogue or navigation structure.</li>
+      </ol>
+      <p>Most businesses are fully operational within a single business day once the Spire data export is ready and third-party API credentials are on hand.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="common-questions" class="resources-section reveal">
+  <div class="resources-section-inner">
+    <h2>Common Questions</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3>Do I need to change how I use Spire?</h3>
+        <p>No. Skudora connects to Spire as an integration layer — your team continues working in Spire exactly as before. Skudora adds a customer-facing and workflow layer on top without disrupting your existing processes.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is there a limit to how many customers or users I can add?</h3>
+        <p>No. Your Skudora subscription includes unlimited team accounts and unlimited customer accounts. There are no per-seat fees.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How is billing handled?</h3>
+        <p>For current pricing and billing details, visit the <a href="pricing.html">Pricing page</a> — it is always kept up to date.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does Skudora support EDI integration?</h3>
+        <p>Not currently. Skudora does not offer EDI (Electronic Data Interchange) integration at this time. Skudora's integration model is built around real-time API connectivity — with Spire, carriers, payment gateways, and other services — rather than the batch-based document exchange that EDI relies on. If EDI is a requirement for your business, we recommend discussing your specific needs with your Spire Partner. EDI capabilities may be considered for a future roadmap depending on demand.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What happens to my data if I cancel?</h3>
+        <p>Your Spire data always remains in Spire — Skudora never holds your records hostage. Upon cancellation your Skudora environment is deactivated and you can request an export of any Skudora-specific data at any time.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is Skudora available on mobile?</h3>
+        <p>Yes. The full Skudora platform is responsive and runs in any modern browser on desktop, tablet, or mobile. In addition, <strong>Skudora Fulfill</strong> is a dedicated mobile app built exclusively for fulfillment, warehouse, and shipping personnel — and it is available today, included in your subscription at no additional cost.</p>
+        <p>Skudora Fulfill is a Progressive Web App (PWA). On both iOS and Android, it can be saved directly to your home screen and behaves exactly like a native app — its own icon, full-screen experience, and full access to device hardware. No app store, no installation file. Any internet-enabled device with a browser can run it.</p>
+        <p>Skudora Fulfill handles the complete post-order fulfillment workflow, including:</p>
+        <ul>
+          <li>Creating and configuring packages with dimensional weight and quantities</li>
+          <li>Shopping live carrier rates across supported couriers</li>
+          <li>Selecting and booking shipments</li>
+          <li>Enforcing signature or ID verification requirements per shipment</li>
+          <li>Managing multiple shipments and partial shipments within a single order</li>
+          <li>Tracking all shipments in real time, including post-dispatch delivery monitoring</li>
+          <li>Charging clients and running invoices at point of fulfillment</li>
+        </ul>
+        <p>Skudora Fulfill is actively developed with new capabilities added on an ongoing basis. Additional specialized apps for other roles are in development and will be announced as they become available.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="knowledgebase" class="resources-section reveal">
+  <div class="resources-section-inner">
+    <h2>Knowledgebase</h2>
+    <p>Detailed technical and operational documentation for teams that want to go deeper.</p>
+
+    <div id="how-skudora-works-with-spire" class="resources-subsection">
+      <h3>How Skudora Works with Spire</h3>
+      <p>Skudora connects to your Spire environment via the Spire Integration Partner (SIP) API. This connection allows Skudora to read and write data across customers, sales orders, purchase orders, quotes, inventory, and vendor records — all in real time.</p>
+      <p>Data flows bidirectionally: actions taken in Skudora (such as a customer approving a quote) are reflected immediately in Spire, and changes made in Spire (such as updating an order status) surface in Skudora automatically. No manual imports or exports are required.</p>
+    </div>
+
+    <div id="environment-requirements" class="resources-subsection">
+      <h3>Environment Requirements</h3>
+      <p>To connect Skudora to your Spire environment you will need the following:</p>
+
+      <ul>
+        <li><strong>Spire (latest version)</strong> — Skudora is built against the current release of Spire and is kept up to date alongside it.</li>
+        <li><strong>On-premise Spire with a static IP address</strong> — your Spire server must be reachable from the internet via a static IP so Skudora can maintain a stable, persistent connection. If a static IP is not available, contact us to discuss connectivity options.</li>
+        <li><strong>Spire Cloud</strong> — as an alternative to on-premise, Spire Cloud is fully supported. Your Skudora account is provisioned directly against your Spire Cloud instance with no additional network configuration required.</li>
+        <li><strong>A registered Spire Partner (Spire Assurance)</strong> — Skudora can only be purchased and implemented in conjunction with a registered Spire Partner. If you do not already have a Spire Partner supporting your business, one must be established before onboarding. Your Spire Partner handles your Spire licence, support, and implementation — Skudora works alongside them as a Spire Integration Partner (SIP), meaning Skudora is the product that integrates with Spire, while your Spire Partner is the human relationship that supports your Spire environment.</li>
+        <li><strong>A payment gateway or payments provider (optional)</strong> — required only if you wish to accept credit card payments through Skudora. Businesses whose customers are exclusively on net-30 or other invoice terms do not need a payment provider. If any customers will shop and pay by card at checkout, a supported payment gateway must be established prior to go-live.</li>
+        <li><strong>A modern web browser</strong> — Chrome, Edge, Firefox, or Safari (current version or one version prior). No software installation is required on any client machine. Skudora runs entirely in the browser.</li>
+      </ul>
+    </div>
+
+    <div id="exhaustive-feature-listing" class="resources-subsection">
+      <h3>Exhaustive Feature Listing</h3>
+      <p>Every capability included in the Skudora for Spire subscription, organized by area.</p>
+
+      <div class="feature-listing-category">
+        <h4>AI &amp; Intelligence</h4>
+        <ul>
+          <li>Semantic search across products, orders, customer history, and team interactions</li>
+          <li>Synonym and intent matching — no exact-text requirement for relevant results</li>
+          <li>AI-assisted product description and customer-facing content generation</li>
+          <li>AI-amplified catalogue management for large and complex SKU sets</li>
+          <li>Automated language tone and professionalism controls across customer communications</li>
+          <li>Context-aware AI suggestions during quote and order workflows</li>
+          <li>Full-text search across historical customer interactions and activity feeds</li>
+          <li>Institutional knowledge indexing — breaks information out of email inboxes into shared, searchable organizational memory</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Team Collaboration</h4>
+        <ul>
+          <li>Unlimited team accounts with role-based access controls</li>
+          <li>Team notes visible in context on every work surface — orders, quotes, customer profiles, and assets</li>
+          <li>Internal conversation threads tied to specific records</li>
+          <li>Real-time activity feed showing all team actions across the platform</li>
+          <li>Topical inquiry streams for structured team discussions</li>
+          <li>Pinned items for quick access to priority records</li>
+          <li>In-app notifications and reminders for assigned tasks and deadlines</li>
+          <li>External customer conversations logged and visible to the entire team</li>
+          <li>Cross-team visibility — anyone can step into any active work with full context</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Payments &amp; Cash Flow</h4>
+        <ul>
+          <li>Online payment acceptance integrated at checkout and on invoices</li>
+          <li>Multiple payment gateway support</li>
+          <li>Live and manual transaction recording</li>
+          <li>Customer-specific payment terms configuration</li>
+          <li>Real-time outstanding balance tracking per customer</li>
+          <li>Automated payment reminder sequences with configurable timing and escalation</li>
+          <li>Intelligent overdue notifications for accounting and leadership</li>
+          <li>Cash flow dashboards for real-time financial visibility</li>
+          <li>Full transaction history stored against each customer profile</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Service Forms &amp; Asset Management</h4>
+        <ul>
+          <li>Unlimited customizable service intake forms</li>
+          <li>Repeat customer data pre-population to reduce intake friction</li>
+          <li>Asset submission and registration at intake</li>
+          <li>Asset show pages with full service and inspection history</li>
+          <li>Scheduled reminders for inspection, calibration, testing, cleaning, and repair cycles</li>
+          <li>Asset tracking by serial number, customer, and service schedule</li>
+          <li>Full asset lifecycle management from intake through retirement</li>
+          <li>Asset-specific document storage — manuals, certificates, and service records</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Shipping &amp; Carrier Integration</h4>
+        <ul>
+          <li>Native integration with Canada Post and major international carriers</li>
+          <li>Multi-carrier rate comparison and live shipping calculator</li>
+          <li>Custom delivery method configuration for oversized, heavy, dangerous, or high-value goods</li>
+          <li>Shipment creation and manifest generation</li>
+          <li>End-to-end shipment tracking inside the platform</li>
+          <li>Carrier-specific label generation</li>
+          <li>Drop ship routing logic using vendor location, product attributes, and customer address</li>
+          <li>Delivery rule automation based on product type, weight, dimensions, and regulatory classification</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Customer Management</h4>
+        <ul>
+          <li>Unlimited customer accounts with complete profile management</li>
+          <li>Contractual obligations stored per customer and enforced at checkout</li>
+          <li>Approved terms and pricing agreements per account</li>
+          <li>Compliance document requirements attached to customer profiles</li>
+          <li>Full interaction history — every order, quote, conversation, and transaction</li>
+          <li>Customer-specific payment terms and credit arrangements</li>
+          <li>Purchase history and reorder intelligence</li>
+          <li>Self-serve customer portal for order status, quotes, and documents</li>
+          <li>Quote creation, checkout from quote, and self-serve checkout flows</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Purchase Orders &amp; Drop Ship</h4>
+        <ul>
+          <li>Purchase order creation synced directly with Spire</li>
+          <li>Drop ship logic routing orders to the most efficient fulfillment origin</li>
+          <li>Vendor attribute matching against product data and customer location for optimal routing</li>
+          <li>PO status tracking from creation through receipt</li>
+          <li>Multi-vendor purchase order management</li>
+          <li>Drop ship confirmation and tracking notifications</li>
+          <li>Fulfillment path optimization to minimize shipping legs and landed cost</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Brands &amp; Vendors</h4>
+        <ul>
+          <li>Distinct manufacturer brand and vendor record management</li>
+          <li>Brand micro-shops with independent branding, logos, and customer-facing product pages</li>
+          <li>Brand-specific product catalogues and category structures</li>
+          <li>Vendor management for purchasing, supply chain, and procurement workflows</li>
+          <li>Vendor lead time tracking and performance history</li>
+          <li>Brand marketing content purposefully separated from vendor supply chain data</li>
+          <li>Cross-referencing of vendor products to brand-facing presentations</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>E-Commerce &amp; Marketing</h4>
+        <ul>
+          <li>Fully branded customer-facing storefront with custom logos and colour schemes</li>
+          <li>Rich product pages with descriptions, images, and technical specifications</li>
+          <li>Product categories and sub-categories with configurable navigation</li>
+          <li>Promotional landing pages created and managed on the fly</li>
+          <li>Campaign landing pages for trade shows, events, and seasonal promotions</li>
+          <li>Landing page perpetual management — product retirements, price changes, and supply disruptions update automatically across all live pages</li>
+          <li>Announcement banners — dismissible and non-dismissible configurations</li>
+          <li>Navigation shortcuts and featured product placements</li>
+          <li>Promo code engine with configurable rules and expiry dates</li>
+          <li>Discount rules for holidays, special events, and corporate accounts</li>
+          <li>Full product lifecycle management — live, on sale, discontinued, retired, and deleted states</li>
+          <li>Automated supply chain disruption flags surfaced across relevant product pages and micro-shops</li>
+          <li>Personalized branding applied consistently across all customer-facing surfaces</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Campaign Engine</h4>
+        <ul>
+          <li>Time-bound campaign scheduling with defined start and end dates</li>
+          <li>Site-wide seasonal branding takeovers — modified logos and colour scheme overrides</li>
+          <li>Timed announcement bars synchronized with active campaigns</li>
+          <li>Dismissible and non-dismissible alert configurations</li>
+          <li>Critical notice broadcasting with priority display rules</li>
+          <li>Campaign-linked discount and promo code activation</li>
+          <li>Automated campaign expiry and reversion to standard branding</li>
+          <li>Multiple concurrent campaigns with priority ordering</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Inventory Management &amp; Turns</h4>
+        <ul>
+          <li>Overstock calculation based on configurable total inventory value thresholds</li>
+          <li>Automated discount sequences triggered when overstock thresholds are exceeded</li>
+          <li>Programmatic discount escalation — e.g. 10% → 20% → 30% at configurable intervals until cleared</li>
+          <li>Stale inventory detection based on historical sales velocity data per SKU</li>
+          <li>Non-moving inventory identification using configurable time thresholds (days, weeks, or months without a sale)</li>
+          <li>Automatic clearance discounting sequences initiated when movement thresholds are crossed</li>
+          <li>Discount escalation continues programmatically until inventory is cleared or manually overridden</li>
+          <li>Inventory turn reporting — track clearance sequence performance over time</li>
+          <li>Rules configurable by individual product, category, brand, or vendor</li>
+          <li>Manual override to pause, adjust, or cancel any automated sequence at any time</li>
+          <li>Real-time Spire inventory data integration for accurate stock level calculations</li>
+        </ul>
+      </div>
+
+      <div class="feature-listing-category">
+        <h4>Document &amp; Compliance Management</h4>
+        <ul>
+          <li>Version-controlled document management across all record types</li>
+          <li>Documents attached to specific transactions, products, checkout sessions, and customer profiles</li>
+          <li>Health Canada regulatory document requirements enforced at checkout</li>
+          <li>Controlled goods compliance documentation and audit trails</li>
+          <li>Legal agreement storage with full version history</li>
+          <li>Historical document retention — stored accurately despite policy changes over time</li>
+          <li>Compliance requirement triggers based on product classification</li>
+          <li>Document retrieval by transaction, product, customer, or date range</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="training-modules" class="resources-section reveal">
+  <div class="resources-section-inner">
+    <h2>Training Modules</h2>
+
+    <div class="training-restricted-notice">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:2px;"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <p><strong>Available to registered Spire Partners only.</strong> Training module access is granted after a Spire Partner has officially signed on as a Skudora promoter. If your organization is a registered Spire Partner and is interested in promoting Skudora to clients, please <a href="contact.html">contact us</a> to begin the onboarding process.</p>
+    </div>
+
+    <p>The Skudora training programme provides registered Spire Partner promoters with the structured knowledge and materials needed to confidently introduce, demonstrate, and support Skudora for their clients. Modules cover platform navigation, Spire integration setup, onboarding workflows, feature walkthroughs, and best practices for implementation across different business types.</p>
+
+  </div>
+</section>
+
+
+<section class="cta-section reveal">
+
+<h2>Start Growing Your Business on Skudora</h2>
+
+<p>Leap into the future of Spire-based operations with Skudora. Effortless adoption, powerful results—request your demo today!</p>
+
+<a class="primary-btn" href="contact.html">Request Demo</a>
+
+</section>
+
+
+<footer>
+
+<img src="/images/Skudora_Logo_Stacked_White.svg" alt="Skudora white stacked logo" class="footer-logo" aria-hidden="true" role="img" />
+
+<p class="footer-tagline">Humanize digital commerce</p>
+
+<div class="footer-social-links">
+  <a href="https://www.linkedin.com/company/skudora" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <img src="/images/linkedin_light_for_dark_background.svg" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/skudora" target="_blank" rel="noopener noreferrer" aria-label="X">
+    <img src="/images/x_light_for_dark_background.svg" alt="X" />
+  </a>
+  <a href="https://reddit.com/r/skudora" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+    <img src="/images/reddit_light_for_dark_background.svg" alt="Reddit" />
+  </a>
+  <a href="https://www.youtube.com/@skudora" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <img src="/images/youtube_light_for_dark_background.svg" alt="YouTube" />
+  </a>
+  <a href="https://instagram.com/skudora" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <img src="/images/instagram_light_for_dark_background.svg" alt="Instagram" />
+  </a>
+  <a href="https://www.tiktok.com/@skudora" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+    <img src="/images/tiktok_light_for_dark_background.svg" alt="TikTok" />
+  </a>
+  <a href="https://github.com/skudora" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+    <img src="/images/github_light_for_dark_background.svg" alt="GitHub" />
+  </a>
+  <a href="https://bsky.app/profile/skudora.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+    <img src="/images/bluesky_light_for_dark_background.svg" alt="Bluesky" />
+  </a>
+  <a href="https://linktr.ee/skudora" target="_blank" rel="noopener noreferrer" aria-label="Linktree">
+    <img src="/images/linktree_light_for_dark_background.svg" alt="Linktree" />
+  </a>
+</div>
+
+<p class="footer-copyright">© 2026 Skudora All rights reserved.</p>
+
+</footer>
+
+
+<script>
+/* PAGE FADE */
+document.addEventListener("DOMContentLoaded", function() {
+    var pc = document.querySelector(".page-content");
+    if (!pc) return;
+
+    // Fade in on load
+    pc.style.opacity = "0";
+    pc.style.transform = "translateY(10px)";
+    pc.style.transition = "opacity 0.35s ease, transform 0.35s ease";
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            pc.style.opacity = "1";
+            pc.style.transform = "translateY(0)";
+        });
+    });
+
+    // Fade out on internal link clicks
+    document.querySelectorAll("a").forEach(function(link) {
+        if (
+            link.hostname === window.location.hostname &&
+            !link.hasAttribute("target") &&
+            !link.href.includes("#")
+        ) {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                var href = this.href;
+                pc.style.opacity = "0";
+                setTimeout(function() { window.location = href; }, 300);
+            });
+        }
+    });
+});
+
+/* SCROLL REVEAL */
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+reveals.forEach(el => observer.observe(el));
+
+window.addEventListener("pageshow", function(e) {
+    if (e.persisted) {
+        var pc = document.querySelector(".page-content");
+        if (pc) { pc.style.opacity = "1"; pc.style.transform = "translateY(0)"; }
+    }
+});
+</script>
+
+</div><!-- /.page-content -->
+
+</body>
+</html>
