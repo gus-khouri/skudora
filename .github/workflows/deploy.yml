@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check header and footer are identical on every page
+        run: python3 .github/check-layout.py
+
       - name: Deploy over FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -26,3 +29,4 @@ jobs:
             **/.git*
             **/.git*/**
             **/.github/**
+            CLAUDE.md
