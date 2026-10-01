@@ -1,0 +1,272 @@
+/* COMPARISON PAGES (/vs/) */
+
+.compare-hero .eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.compare-hero .hero-buttons .primary-btn {
+  margin-right: 10px;
+}
+
+.compare-section {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.compare-section.tinted {
+  max-width: none;
+  background: #f9fafb;
+}
+
+.compare-section.tinted > .compare-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.compare-section h2 {
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.compare-lead {
+  max-width: 680px;
+  margin: 0 auto 40px;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.compare-section .feature-card {
+  text-align: left;
+}
+
+.compare-section .feature-card h3 {
+  color: #111827;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+.compare-section .feature-card p {
+  margin: 0;
+}
+
+.feature-grid.two-up {
+  margin-top: 40px;
+}
+
+@media (min-width: 900px) {
+  .feature-grid.two-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Comparison table */
+
+.compare-table-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(31,41,55,0.07), 0 1.5px 4px rgba(31,41,55,0.04);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.97rem;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 16px 20px;
+  vertical-align: top;
+  border-bottom: 1px solid #f3f4f6;
+  line-height: 1.55;
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.compare-table thead th {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #6b7280;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.compare-table thead th.col-skudora {
+  color: #1d4ed8;
+  background: #eff6ff;
+}
+
+.compare-table tbody th {
+  width: 22%;
+  font-weight: 600;
+  color: #111827;
+}
+
+.compare-table td.col-skudora {
+  width: 42%;
+  background: #f8fbff;
+  color: #1f2937;
+}
+
+.compare-table td.col-skudora::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: -3px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.compare-table td.col-other {
+  color: #6b7280;
+}
+
+@media (max-width: 720px) {
+  .compare-table thead {
+    display: none;
+  }
+  .compare-table,
+  .compare-table tbody,
+  .compare-table tr,
+  .compare-table th,
+  .compare-table td {
+    display: block;
+    width: auto;
+  }
+  .compare-table tr {
+    padding: 16px 18px;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .compare-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .compare-table th,
+  .compare-table td {
+    padding: 4px 0;
+    border-bottom: none;
+  }
+  .compare-table tbody th {
+    width: auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+  .compare-table td.col-skudora {
+    width: auto;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+  }
+  .compare-table td.col-other::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: #374151;
+  }
+}
+
+/* Checklist */
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 40px auto 0;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  text-align: left;
+}
+
+.checklist li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.checklist li svg {
+  flex: 0 0 22px;
+  margin-top: 2px;
+  color: #2563eb;
+}
+
+.checklist strong {
+  display: block;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.checklist span {
+  color: #4b5563;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+/* FAQ */
+
+.compare-faq {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Footnote */
+
+.compare-footnote {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+  .compare-section {
+    padding: 64px 18px;
+  }
+  .compare-section h2 {
+    font-size: 26px;
+  }
+  .compare-hero .hero-buttons .primary-btn {
+    margin: 0 0 12px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
