@@ -519,7 +519,7 @@ margin-top:12px;
   background: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  padding: 24px 28px;
+  padding: 18px 24px 8px;
 }
 
 .resources-toc-label {
@@ -528,35 +528,25 @@ margin-top:12px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #9ca3af;
-  margin: 0 0 16px;
+  margin: 0 0 4px;
 }
 
+/* One row per section: title on the left, sub-links as chips on the right */
 .resources-toc-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8px 20px;
-}
-
-@media (min-width: 900px) {
-  .resources-toc-columns {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 8px 16px;
-  }
-  .resources-toc-card {
-    padding: 24px 22px;
-  }
-  .toc-sub-link {
-    line-height: 1.3;
-    padding-left: 10px;
-  }
+  display: block;
 }
 
 .resources-toc-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: start;
+  gap: 8px 20px;
+  padding: 12px 0;
+  border-top: 1px solid #eceef1;
+}
+
+.resources-toc-group:first-child {
+  border-top: none;
 }
 
 .toc-section-link {
@@ -564,6 +554,7 @@ margin-top:12px;
   font-weight: 600;
   color: #111827;
   text-decoration: none;
+  line-height: 28px;
   transition: color 0.2s ease;
 }
 
@@ -571,19 +562,39 @@ margin-top:12px;
   color: #2563eb;
 }
 
+.toc-subs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .toc-sub-link {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4b5563;
   text-decoration: none;
-  padding-left: 14px;
-  border-left: 2px solid #e5e7eb;
+  line-height: 1.3;
+  padding: 5px 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  white-space: nowrap;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .toc-sub-link:hover {
   color: #2563eb;
-  border-left-color: #2563eb;
+  border-color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .resources-toc-group {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .toc-sub-link {
+    white-space: normal;
+  }
 }
 
 .resources-section {
@@ -1033,12 +1044,6 @@ font-weight: 600;
   /* PAGE CONTENT OFFSET — navbar wraps to two rows on mobile */
   .page-content {
     padding-top: 128px;
-  }
-
-  /* RESOURCES TOC — stack groups vertically earlier */
-  .resources-toc-columns {
-    flex-direction: column;
-    gap: 16px;
   }
 
   /* RESOURCES FEATURE LIST — single column */
