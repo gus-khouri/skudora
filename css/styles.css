@@ -541,8 +541,15 @@ margin-top:12px;
 @media (min-width: 900px) {
   .resources-toc-columns {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px 28px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px 16px;
+  }
+  .resources-toc-card {
+    padding: 24px 22px;
+  }
+  .toc-sub-link {
+    line-height: 1.3;
+    padding-left: 10px;
   }
 }
 
