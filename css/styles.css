@@ -529,6 +529,15 @@ margin-top:12px;
   gap: 8px 20px;
 }
 
+@media (min-width: 900px) {
+  .resources-toc-columns {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, auto));
+    justify-content: space-between;
+    gap: 8px 24px;
+  }
+}
+
 .resources-toc-group {
   display: flex;
   flex-direction: column;
