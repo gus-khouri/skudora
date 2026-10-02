@@ -123,6 +123,11 @@
 <td class="col-other" data-label="BigCommerce">Tiered plans. B2B features sold separately in B2B Edition</td>
 </tr>
 <tr>
+<th scope="row">Pricing engine</th>
+<td class="col-skudora">List prices calculated from landed cost, currency exchange, category margins and handling costs, with MAP rules by brand that override the calculation</td>
+<td class="col-other" data-label="BigCommerce">Prices set by hand or with price lists. MAP through apps</td>
+</tr>
+<tr>
 <th scope="row">Quotes</th>
 <td class="col-skudora">Expiry dates, checkout from the quote, sent to Spire</td>
 <td class="col-other" data-label="BigCommerce">Expiry dates and reminders, with B2B Edition</td>
@@ -167,6 +172,7 @@
 <h2>Things distributors need that BigCommerce doesn't build in</h2>
 <p class="compare-lead">Built into every Skudora subscription, with nothing extra to install.</p>
 <ul class="checklist">
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>MAP controls</strong><span>Minimum advertised price rules by brand or manufacturer that override your calculated price.</span></div></li>
 <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Inquiry streams</strong><span>Shared inboxes for sales, purchasing, accounting and careers, with tags and phases to track the work.</span></div></li>
 <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Automated monthly statements</strong><span>Sent to every customer, every month, without anyone touching them.</span></div></li>
 <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Proof of shipment</strong><span>Photos, videos and PDFs attached to each shipment before it leaves.</span></div></li>
@@ -179,8 +185,27 @@
 </ul>
 </section>
 
-<section class="compare-section tinted reveal">
+<section class="compare-section tinted reveal" id="pricing-engine">
 <div class="compare-inner">
+<h2>Price 100,000 SKUs without a spreadsheet</h2>
+<p class="compare-lead">Skudora's pricing engine calculates a list price for every SKU from what it actually costs you to sell it. When a supplier's price or the exchange rate changes, your prices follow in real time.</p>
+<ul class="checklist">
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Purchase currency and exchange rate</strong><span>Costs from foreign suppliers convert at today&#x27;s rate.</span></div></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Country of origin</strong><span>Pricing accounts for where each item comes from.</span></div></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Category and subcategory margins</strong><span>Set the margin once for a whole category.</span></div></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Margin exceptions</strong><span>Override the margin for specific brands or items.</span></div></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Multi-vendor costs</strong><span>Compare what each vendor charges for the same SKU.</span></div></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="16 9 10.5 15 8 12.5"/></svg><div><strong>Handling surcharges</strong><span>Dangerous goods and large, awkward items carry their extra shipping and handling cost.</span></div></li>
+</ul>
+<div class="map-callout">
+<h3>MAP rules that override the math</h3>
+<p>Set minimum advertised price rules by brand or manufacturer. When the calculation comes in below MAP, Skudora holds the advertised price at MAP. BigCommerce relies on add-on apps for MAP.</p>
+</div>
+<p class="compare-lead pricing-note">Show these prices to the public, or only to certain types of customers once they log in.</p>
+</div>
+</section>
+
+<section class="compare-section reveal">
 <h2>Built for the way you already work</h2>
 <div class="feature-grid two-up">
 <div class="feature-card">
@@ -200,10 +225,10 @@
 <p>Rent out a gas detector for three months, billed weekly, set up from the quote you already sent. Skudora charges the card or issues a new invoice on schedule, for as long as the agreement runs.</p>
 </div>
 </div>
-</div>
 </section>
 
-<section class="compare-section reveal">
+<section class="compare-section tinted reveal">
+<div class="compare-inner">
 <h2>Questions distributors ask</h2>
 <div class="faq-list compare-faq">
 <div class="faq-item">
@@ -225,6 +250,7 @@
 <div class="faq-item">
 <h3>Where is my data stored?</h3>
 <p>Skudora&#x27;s own data is stored in Canada. Payment processors, and any third-party add-ons or header snippets you choose to install, store data under their own terms and may keep it outside Canada.</p>
+</div>
 </div>
 </div>
 </section>

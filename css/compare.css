@@ -270,3 +270,33 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* Pricing engine section */
+
+.map-callout {
+  max-width: 980px;
+  margin: 24px auto 0;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid #2563eb;
+  box-sizing: border-box;
+  border-radius: 0;
+  padding: 22px 26px;
+}
+
+.map-callout h3 {
+  color: #111827;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.map-callout p {
+  margin: 0;
+  color: #374151;
+}
+
+.compare-lead.pricing-note {
+  margin: 28px auto 0;
+  font-size: 0.95rem;
+}
