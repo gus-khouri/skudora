@@ -525,7 +525,8 @@ margin-top:12px;
 .resources-toc-columns {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 48px;
+  justify-content: space-between;
+  gap: 8px 20px;
 }
 
 .resources-toc-group {
