@@ -1,5 +1,14 @@
 html {
 scroll-behavior: smooth;
+scroll-padding-top: 96px; /* keeps jump-link targets clear of the fixed header bar */
+}
+
+@media (max-width: 768px) {
+html { scroll-padding-top: 136px; }
+}
+
+@media (max-width: 480px) {
+html { scroll-padding-top: 186px; }
 }
 
 /* HUBSPOT FORM CONTAINER */
@@ -532,9 +541,8 @@ margin-top:12px;
 @media (min-width: 900px) {
   .resources-toc-columns {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, auto));
-    justify-content: space-between;
-    gap: 8px 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 28px;
   }
 }
 
