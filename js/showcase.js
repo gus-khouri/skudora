@@ -28,7 +28,7 @@
 
   function box() {
     var vw = window.innerWidth;
-    var h = vw <= 480 ? 340 : vw <= 768 ? 380 : 440;
+    var h = vw <= 480 ? 330 : vw <= 768 ? 380 : 440;
     var maxW = Math.min(vw <= 768 ? vw * 0.86 : vw * 0.62, 680);
     return { h: h, maxW: maxW };
   }
@@ -46,8 +46,8 @@
     var sideScale = mobile ? 0.72 : 0.78;
     var angle = mobile ? 40 : 34;
     var sizes = slides.map(function (s) { return sizeOf(s, b); });
-    // On phones the stage shrinks to the active slide so wide screenshots don't leave a gap.
-    var stageH = mobile ? Math.max(sizes[current].h, 160) : b.h;
+    // The stage keeps one fixed height so the caption, dots and arrows never move.
+    var stageH = b.h;
     stage.style.setProperty('--sc-h', stageH + 'px');
 
     // Place neighbours outward from the centre slide, each partly tucked behind the one before.
@@ -72,7 +72,7 @@
       var sz = sizes[i];
       s.style.width = sz.w + 'px';
       s.style.height = sz.h + 'px';
-      var y = (stageH - sz.h) / 2;
+      var y = mobile ? stageH - sz.h : (stageH - sz.h) / 2;
       var ad = Math.abs(d);
       var hidden = ad > (mobile ? 1 : 3);
       s.classList.toggle('is-active', d === 0);
@@ -94,6 +94,16 @@
     });
     var s = slides[current];
     caption.innerHTML = '<strong>' + s.dataset.title + '</strong>' + s.dataset.caption;
+  }
+
+  function sizeCaption() {
+    caption.style.minHeight = '0px';
+    var tallest = 0;
+    slides.forEach(function (s) {
+      caption.innerHTML = '<strong>' + s.dataset.title + '</strong>' + s.dataset.caption;
+      tallest = Math.max(tallest, caption.offsetHeight);
+    });
+    caption.style.minHeight = tallest + 'px';
   }
 
   function go(i) { current = (i + n) % n; layout(); }
@@ -161,6 +171,9 @@
   } else { start(); }
 
   var rt;
-  window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(layout, 80); });
+  window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { sizeCaption(); layout(); }, 80); });
+  sizeCaption();
   layout();
+  // Web fonts can change line wrapping once they load.
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { sizeCaption(); layout(); });
 })();

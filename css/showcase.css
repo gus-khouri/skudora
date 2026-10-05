@@ -17,7 +17,6 @@
   height: var(--sc-h, 440px);
   margin: 0 auto;
   perspective: 1600px;
-  transition: height 0.5s cubic-bezier(.2, .7, .2, 1);
   outline: none;
   touch-action: pan-y;
   user-select: none;
@@ -60,7 +59,6 @@
 
 .showcase-caption {
   max-width: 640px;
-  min-height: 3.4em;
   margin: 52px auto 0;
   padding: 0 20px;
   color: #374151;
@@ -80,7 +78,7 @@
   align-items: center;
   justify-content: center;
   gap: 18px;
-  margin-top: 14px;
+  margin-top: 44px;
 }
 
 .showcase-arrow {
@@ -114,7 +112,7 @@
 .showcase-dot.is-active { width: 26px; border-radius: 6px; background: #2563eb; }
 
 .showcase-note {
-  margin: 22px auto 0;
+  margin: 6px auto 0;
   padding: 0 20px;
   color: #6b7280;
   font-size: 0.9rem;
@@ -163,9 +161,10 @@
 @media (max-width: 768px) {
   .hero.hero--showcase { padding: 64px 20px 28px; }
   .showcase { padding-bottom: 56px; }
-  .showcase-caption { font-size: 1rem; margin-top: 26px; }
+  .showcase-caption { font-size: 1rem; min-height: 6.6em; }
+  .showcase-controls { margin-top: 30px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .showcase-slide, .showcase-stage { transition: none; }
+  .showcase-slide { transition: none; }
 }
