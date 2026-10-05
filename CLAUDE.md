@@ -17,3 +17,8 @@ The header bar and footer must be identical on every page, always.
 - No em dashes in new copy.
 - Skudora is a product and trademark of Andket Holding Corp., not a company.
 - Spire partner status wording: "Official Spire Integration Partner (SIP)".
+
+## Imagery
+
+- Gus wants the flat, illustrated product drawing style (as in the Surf Beach Supplies demo screenshots) used across skudora.com instead of real product photographs.
+- Screenshots of real stores must use demo data only: Surf Beach Supplies as the store, invented brands such as FlyGuy Fitness™, and no real customer, staff, brand or product details.
