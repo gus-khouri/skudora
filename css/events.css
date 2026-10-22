@@ -210,7 +210,27 @@
 
 .event-link:hover { text-decoration: underline; }
 
-.event-card.is-past .event-date { background: #6b7280; }
+/* Past / Next up / Upcoming label */
+.event-time { margin-bottom: 14px; }
+
+.event-when {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.event-when.is-upcoming { background: #eff6ff; color: #2563eb; }
+.event-when.is-next { background: #2563eb; color: #fff; }
+.event-when.is-past { background: #f3f4f6; color: #6b7280; }
+
+.event-card.is-past { background: #fafafa; }
+.event-card.is-past .event-date { background: #9ca3af; }
+.event-card.is-past .event-city,
+.event-card.is-past .event-venue { color: #6b7280; }
 
 /* "More to come" tile */
 .event-card.event-more {
