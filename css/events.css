@@ -319,39 +319,30 @@
   .events-gallery li:last-child { max-width: none; }
 }
 
-/* Slow sonar ping on the "Next up" tag: a thin ring and a fainter echo glide out
-   and fade, then a calm pause before the next ping. */
+/* Slow, close sonar ping on the "Next up" tag: one thin ring fades in at the tag's
+   edge, drifts a few pixels out while fading away, then rests. */
 .event-when.is-next {
   position: relative;
 }
 
-.event-when.is-next::before,
 .event-when.is-next::after {
   content: "";
   position: absolute;
   inset: 0;
-  border: 2px solid #2563eb;
+  border: 1.5px solid #2563eb;
   border-radius: 999px;
   opacity: 0;
   pointer-events: none;
-  animation: nextUpPing 5s linear infinite;
-}
-
-.event-when.is-next::after {
-  animation-delay: .6s;
-  border-width: 1.5px;
+  animation: nextUpPing 5s ease-in-out infinite;
 }
 
 @keyframes nextUpPing {
-  0%   { inset: 0;     opacity: .6; }
-  10%  { inset: -5px;  opacity: .5; }
-  25%  { inset: -10px; opacity: .32; }
-  40%  { inset: -14px; opacity: .12; }
-  50%  { inset: -16px; opacity: 0; }
-  100% { inset: -16px; opacity: 0; }
+  0%   { inset: -1px; opacity: 0; }
+  12%  { inset: -2px; opacity: .45; }
+  55%  { inset: -7px; opacity: 0; }
+  100% { inset: -7px; opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .event-when.is-next::before,
   .event-when.is-next::after { animation: none; }
 }
