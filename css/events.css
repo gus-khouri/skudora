@@ -318,3 +318,19 @@
   .events-gallery { grid-template-columns: 1fr; }
   .events-gallery li:last-child { max-width: none; }
 }
+
+/* Soft pulse on the "Next up" tag */
+.event-when.is-next {
+  position: relative;
+  animation: nextUpPulse 2.4s ease-out infinite;
+}
+
+@keyframes nextUpPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.55); }
+  70%  { box-shadow: 0 0 0 9px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-when.is-next { animation: none; }
+}
